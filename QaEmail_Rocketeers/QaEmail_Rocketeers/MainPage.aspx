@@ -9,9 +9,14 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <center>
-            <!--<input type="button" value="Login" id="btnlogin" />-->
-        </center>    
+        <asp:Button ID="Button1" runat="server" Text="Login" />
+        <asp:Button ID="Button2" runat="server" Text="Create Account"/>
+        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+            <asp:ListItem>Red</asp:ListItem>
+            <asp:ListItem>Green</asp:ListItem>
+            <asp:ListItem>Yellow</asp:ListItem>
+            <asp:ListItem>Blue</asp:ListItem>
+        </asp:RadioButtonList>
     </div>
     </form>
 </body>

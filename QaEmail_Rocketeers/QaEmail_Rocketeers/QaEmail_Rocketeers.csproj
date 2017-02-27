@@ -94,6 +94,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\emailSpiros.mdf" />
+    <Content Include="App_Data\emailSpiros_log.ldf">
+      <DependentUpon>emailSpiros.mdf</DependentUpon>
+    </Content>
+    <Content Include="login.aspx" />
     <Content Include="MainPage.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -114,6 +119,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
